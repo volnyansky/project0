@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "This button will launch spotify streamer!", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, getString(R.string.this_button_will_launch_spotify_streamer), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"This button will launch football scores app!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.this_button_will_launch_football_scores_app),Toast.LENGTH_LONG).show();
             }
         });
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"This button will launch library app!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.this_button_will_launch_library_app),Toast.LENGTH_LONG).show();
             }
         });
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"This button will launch build it bigger app!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.this_button_will_launch_build_it_bigger_app),Toast.LENGTH_LONG).show();
             }
         });
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"This button will launch XYZ reader app!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.this_button_will_launch_xyz_reader_app),Toast.LENGTH_LONG).show();
             }
         });
 
@@ -60,31 +60,11 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"This button will launch capstone app!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.this_button_will_launch_capstone_app),Toast.LENGTH_LONG).show();
             }
         });
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-     //   getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
